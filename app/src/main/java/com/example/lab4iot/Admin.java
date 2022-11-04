@@ -16,14 +16,12 @@ public class Admin extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_admin);
+        setContentView(R.layout.admin);
 
         firebaseDatabase = FirebaseDatabase.getInstance();
     }
 
-    public void guardarInformacion(View view){
 
-    }
 
     public void guardarInfoDeportivo(View view) {
         DatabaseReference ref = firebaseDatabase.getReference();
@@ -46,9 +44,11 @@ public class Admin extends AppCompatActivity {
         jugador.setApellido(editTextApellidoJugador.getText().toString());
         jugador.setHito(editTexHito.getText().toString());
 
-//        refEquipo.setValue(jugador).addOnSuccessListener(unused -> {
-//            //Snackbar.make(findViewById(R.id.MainActivityLayout),"Usuario registrado correctamente",2000).show();
-//            Toast.makeText(MainActivity.this, "Usuario registrado correctamente", Toast.LENGTH_SHORT).show();
-//        });
+        DatabaseReference refJugador = refEquipo.push();
+
+        refJugador.setValue(jugador).addOnSuccessListener(unused -> {
+            //Snackbar.make(findViewById(R.id.MainActivityLayout),"Usuario registrado correctamente",2000).show();
+            Toast.makeText(Admin.this, "Se registro jugador", Toast.LENGTH_SHORT).show();
+        });
     }
 }
