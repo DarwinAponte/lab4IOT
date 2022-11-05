@@ -23,6 +23,15 @@ public class UserActivity extends AppCompatActivity {
         btn_alineacion.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                startActivity(new Intent(UserActivity.this,User_hitos.class));
+                finish();
+            }
+        });
+
+        Button btn_hitos=(Button) findViewById(R.id.btnHitos);
+        btn_hitos.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
                 startActivity(new Intent(UserActivity.this,User_alineacion.class));
                 finish();
             }

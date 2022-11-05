@@ -37,7 +37,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
         Jugador jugador=list.get(position);
         holder.nombre.setText(jugador.getNombre());
         holder.apellido.setText(jugador.getApellido());
-        //holder.hito.setText(jugador.getHito());
+        holder.hito.setText(jugador.getHito());
 
     }
 
@@ -52,7 +52,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
             super(itemView);
             nombre=itemView.findViewById(R.id.textName);
             apellido=itemView.findViewById(R.id.txtLastName);
-            //hito=itemView.findViewById(R.id.textHito);
+            hito=itemView.findViewById(R.id.textHito);
 
 
         }
