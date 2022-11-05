@@ -41,6 +41,7 @@ public class MainActivity extends AppCompatActivity {
         Intent fbIntent = AuthUI.getInstance()
                 .createSignInIntentBuilder()
                 .setAvailableProviders(Arrays.asList(new AuthUI.IdpConfig.EmailBuilder().build()))
+                .setIsSmartLockEnabled(false)
                 .build();
         activityResultLauncher.launch(fbIntent);
     }
@@ -60,6 +61,7 @@ public class MainActivity extends AppCompatActivity {
 
             FirebaseUser currentUser = FirebaseAuth.getInstance().getCurrentUser();
             Log.d("msg-fb", currentUser.getUid());
+            startActivity(new Intent(MainActivity.this, Admin.class));
 
         } else {
             Log.d("msg-fb", "error al loguearse");
