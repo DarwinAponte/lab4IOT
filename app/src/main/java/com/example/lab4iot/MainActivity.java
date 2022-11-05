@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     public void redirigirUser(View view) {
-        //startActivity(new Intent(MainActivity.this,));
+        startActivity(new Intent(MainActivity.this,UserActivity.class));
     }
 
     private ActivityResultLauncher<Intent> activityResultLauncher = registerForActivityResult(new FirebaseAuthUIActivityResultContract(), result -> {
