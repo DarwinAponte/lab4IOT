@@ -1,11 +1,16 @@
 package com.example.lab4iot.beans;
 
 import java.util.PrimitiveIterator;
+import com.google.firebase.database.IgnoreExtraProperties;
 
+
+@IgnoreExtraProperties
 public class Jugador {
+
     private String nombre;
     private String apellido;
     private String hito;
+
 
     public String getNombre() {
         return nombre;

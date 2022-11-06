@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.Spinner;
 import android.widget.Toast;
 
 import com.example.lab4iot.beans.Jugador;
@@ -27,11 +28,11 @@ public class Admin extends AppCompatActivity {
         DatabaseReference ref = firebaseDatabase.getReference();
         DatabaseReference refEncuentroDeportivo = ref.child("encuentro_deportivo");
 
-        EditText editTextEquipo = findViewById(R.id.inputEquipo);
+        Spinner editTextEquipo = (Spinner)findViewById(R.id.inputEquipoSpinner);
         EditText editTextNombreJugador = findViewById(R.id.inputNombreJugador);
         EditText editTextApellidoJugador = findViewById(R.id.inputApellidoJugador);
         EditText editTexHito = findViewById(R.id.inputHito);
-        String equipo = editTextEquipo.getText().toString();
+        String equipo = editTextEquipo.getSelectedItem().toString();
 
         DatabaseReference refEquipo = refEncuentroDeportivo.child(equipo);
 

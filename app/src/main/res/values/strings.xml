@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">lab4IOT</string>
+<!--    <array name="equipos">-->
+<!--        <String name="PUCP_Sport">PUCP Sport</String>-->
+<!--        <String name="UPC_Sport">UPC Sport</String>-->
+<!--    </array>-->
+    <string-array name="equipos">
+        <item>PUCP SPORT</item>
+        <item>UPC SPORT</item>
+
+    </string-array>
+
 </resources>

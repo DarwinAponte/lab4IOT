@@ -3,6 +3,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.lab4iot">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -13,6 +16,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Lab4IOT"
         tools:targetApi="31">
+        <activity
+            android:name=".User_hitos"
+            android:parentActivityName=".UserActivity"
+            android:exported="false" />
+        <activity
+            android:name=".User_alineacion"
+            android:parentActivityName=".UserActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UserActivity"
+            android:parentActivityName=".MainActivity"
+            android:exported="false" />
         <activity
             android:name=".Admin"
             android:exported="false">
