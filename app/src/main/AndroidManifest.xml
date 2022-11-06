@@ -17,11 +17,11 @@
         android:theme="@style/Theme.Lab4IOT"
         tools:targetApi="31">
         <activity
-            android:name=".User_hitos"
+            android:name=".User_alineacion"
             android:parentActivityName=".UserActivity"
             android:exported="false" />
         <activity
-            android:name=".User_alineacion"
+            android:name=".User_hitos"
             android:parentActivityName=".UserActivity"
             android:exported="false" />
         <activity

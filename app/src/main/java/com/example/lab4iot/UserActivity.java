@@ -7,8 +7,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-import com.google.firebase.database.DatabaseReference;
-
 public class UserActivity extends AppCompatActivity {
 
 
@@ -23,7 +21,7 @@ public class UserActivity extends AppCompatActivity {
         btn_alineacion.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(UserActivity.this,User_hitos.class));
+                startActivity(new Intent(UserActivity.this, User_alineacion.class));
                 finish();
             }
         });
@@ -32,7 +30,7 @@ public class UserActivity extends AppCompatActivity {
         btn_hitos.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(UserActivity.this,User_alineacion.class));
+                startActivity(new Intent(UserActivity.this, User_hitos.class));
                 finish();
             }
         });

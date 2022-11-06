@@ -50,6 +50,9 @@ public class Admin extends AppCompatActivity {
         refJugador.setValue(jugador).addOnSuccessListener(unused -> {
             //Snackbar.make(findViewById(R.id.MainActivityLayout),"Usuario registrado correctamente",2000).show();
             Toast.makeText(Admin.this, "Se registro jugador", Toast.LENGTH_SHORT).show();
+            editTextNombreJugador.setText("");
+            editTextApellidoJugador.setText("");
+            editTexHito.setText("");
         });
     }
 }
