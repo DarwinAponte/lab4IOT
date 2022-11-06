@@ -21,8 +21,9 @@ import java.util.List;
 public class User_alineacion extends AppCompatActivity {
 
     FirebaseDatabase firebaseDatabase;
-    DatabaseReference databaseReference;
+    DatabaseReference databaseReferencePUCP,databaseReferenceUPC;
     ArrayList<Jugador> list = new ArrayList<>();
+    ArrayList<Jugador> listUPC = new ArrayList<>();
 
     ArrayList<TextView> txtPUCPplayer = new ArrayList<>();
     ArrayList<TextView> txtUPCplayer = new ArrayList<>();
@@ -62,8 +63,8 @@ public class User_alineacion extends AppCompatActivity {
 
 
         firebaseDatabase = FirebaseDatabase.getInstance();
-        databaseReference= firebaseDatabase.getReference("encuentro_deportivo").child("PUCP TEAM");
-        databaseReference.addValueEventListener(new ValueEventListener() {
+        databaseReferencePUCP= firebaseDatabase.getReference("encuentro_deportivo").child("PUCP SPORT");
+        databaseReferencePUCP.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 for(DataSnapshot dataSnapshot: snapshot.getChildren()){
@@ -71,11 +72,28 @@ public class User_alineacion extends AppCompatActivity {
                     list.add(jugador);
                     System.out.println(jugador.getNombre());
                 }
-
-                String player="txtPUCP";
-                boolean n=true;
                 for(int i=0; i<Math.min(list.size(),txtPUCPplayer.size());i++){
                    txtPUCPplayer.get(i).setText(list.get(i).getNombre());
+                }
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+
+            }
+        });
+
+        databaseReferenceUPC= firebaseDatabase.getReference("encuentro_deportivo").child("UPC SPORT");
+        databaseReferenceUPC.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                for(DataSnapshot dataSnapshot: snapshot.getChildren()){
+                    Jugador jugador=dataSnapshot.getValue(Jugador.class);
+                    listUPC.add(jugador);
+                    System.out.println(jugador.getNombre());
+                }
+                for(int i=0; i<Math.min(listUPC.size(),txtUPCplayer.size());i++){
+                    txtUPCplayer.get(i).setText(listUPC.get(i).getNombre());
                 }
             }
 
