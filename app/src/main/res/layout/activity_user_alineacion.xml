@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background"
     tools:context=".User_hitos">
 
 
@@ -29,7 +28,7 @@
         android:fontFamily="sans-serif-black"
         android:shadowColor="#FFFFFF"
         android:text="PUCP TEAM"
-        android:textColor="@color/white"
+        android:textColor="@color/black"
         android:textColorHighlight="#E91E63"
         android:textColorLink="#803232"
         android:textSize="24sp"
@@ -43,8 +42,8 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="24dp"
         android:fontFamily="sans-serif-black"
-        android:text="FIBRA TOXICA"
-        android:textColor="@color/white"
+        android:text="UPC SPORTS"
+        android:textColor="@color/black"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/recycleView2"

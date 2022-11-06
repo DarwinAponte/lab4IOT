@@ -15,7 +15,7 @@
         android:gravity="center"
         android:text="PUCP Sport"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-        android:textColor="#F44336"
+        android:textColor="#FFFFFF"
         android:textSize="24sp"
         android:textStyle="normal|bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -30,7 +30,7 @@
         android:gravity="center"
         android:text="UPC Sport"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-        android:textColor="#F44336"
+        android:textColor="#FFFFFF"
         android:textSize="20sp"
         android:textStyle="normal|bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -42,7 +42,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="TextView"
+        android:textSize="16sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView8" />
@@ -52,7 +53,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
-        android:text="TextView"
+        android:textSize="16sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/textView20"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -62,7 +64,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="40dp"
-        android:text="TextView"
+        android:textSize="16sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/txtUPC1"
         app:layout_constraintEnd_toStartOf="@+id/txtUPC1" />
 
@@ -71,7 +74,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="40dp"
-        android:text="TextView"
+        android:textSize="16sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/txtUPC1"
         app:layout_constraintStart_toEndOf="@+id/txtUPC1" />
 
@@ -81,7 +85,8 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="5dp"
         android:layout_marginBottom="5dp"
-        android:text="TextView"
+        android:textSize="16sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/txtUPC3"
         app:layout_constraintEnd_toStartOf="@+id/txtUPC3" />
 
@@ -91,7 +96,8 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="5dp"
         android:layout_marginBottom="5dp"
-        android:text="TextView"
+        android:textSize="16sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/txtUPC4"
         app:layout_constraintStart_toEndOf="@+id/txtUPC4" />
 
@@ -100,7 +106,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="60dp"
-        android:text="TextView"
+        android:textSize="16sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/txtUPC2"
         app:layout_constraintEnd_toEndOf="@+id/txtUPC2"
         app:layout_constraintStart_toStartOf="@+id/txtUPC2" />
@@ -110,7 +117,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="60dp"
-        android:text="TextView"
+        android:textSize="16sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/txtUPC3"
         app:layout_constraintEnd_toEndOf="@+id/txtUPC3"
         app:layout_constraintStart_toStartOf="@+id/txtUPC3" />
@@ -120,7 +128,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="60dp"
-        android:text="TextView"
+        android:textSize="16sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/txtUPC4"
         app:layout_constraintEnd_toEndOf="@+id/txtUPC4"
         app:layout_constraintStart_toStartOf="@+id/txtUPC4" />
@@ -130,7 +139,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="60dp"
-        android:text="TextView"
+        android:textSize="16sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/txtUPC5"
         app:layout_constraintEnd_toEndOf="@+id/txtUPC5"
         app:layout_constraintStart_toStartOf="@+id/txtUPC5" />
@@ -140,7 +150,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="60dp"
-        android:text="TextView"
+        android:textSize="16sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/txtUPC7"
         app:layout_constraintEnd_toEndOf="@+id/txtUPC7"
         app:layout_constraintStart_toStartOf="@+id/txtUPC7" />
@@ -150,7 +161,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="60dp"
-        android:text="TextView"
+        android:textSize="16sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/txtUPC8"
         app:layout_constraintEnd_toEndOf="@+id/txtUPC8"
         app:layout_constraintStart_toStartOf="@+id/txtUPC8" />
@@ -160,7 +172,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
-        android:text="TextView"
+        android:textSize="16sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toStartOf="@+id/txtPUCP1"
         app:layout_constraintTop_toBottomOf="@+id/txtPUCP1" />
 
@@ -169,7 +182,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
-        android:text="TextView"
+        android:textSize="16sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@+id/txtPUCP1"
         app:layout_constraintTop_toBottomOf="@+id/txtPUCP1" />
 
@@ -179,7 +193,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
         android:layout_marginEnd="5dp"
-        android:text="TextView"
+        android:textSize="16sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toStartOf="@+id/txtPUCP3"
         app:layout_constraintTop_toBottomOf="@+id/txtPUCP3" />
 
@@ -189,7 +204,8 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="5dp"
         android:layout_marginTop="5dp"
-        android:text="TextView"
+        android:textSize="16sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@+id/txtPUCP4"
         app:layout_constraintTop_toBottomOf="@+id/txtPUCP4" />
 
@@ -198,7 +214,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="60dp"
-        android:text="TextView"
+        android:textSize="16sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@+id/txtPUCP2"
         app:layout_constraintStart_toStartOf="@+id/txtPUCP2"
         app:layout_constraintTop_toBottomOf="@+id/txtPUCP2" />
@@ -208,7 +225,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="60dp"
-        android:text="TextView"
+        android:textSize="16sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@+id/txtPUCP3"
         app:layout_constraintStart_toStartOf="@+id/txtPUCP3"
         app:layout_constraintTop_toBottomOf="@+id/txtPUCP3" />
@@ -218,7 +236,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="60dp"
-        android:text="TextView"
+        android:textSize="16sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@+id/txtPUCP4"
         app:layout_constraintStart_toStartOf="@+id/txtPUCP4"
         app:layout_constraintTop_toBottomOf="@+id/txtPUCP4" />
@@ -228,7 +247,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="60dp"
-        android:text="TextView"
+        android:textSize="16sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@+id/txtPUCP5"
         app:layout_constraintStart_toStartOf="@+id/txtPUCP5"
         app:layout_constraintTop_toBottomOf="@+id/txtPUCP5" />
@@ -238,7 +258,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="60dp"
-        android:text="TextView"
+        android:textSize="16sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@+id/txtPUCP7"
         app:layout_constraintStart_toStartOf="@+id/txtPUCP7"
         app:layout_constraintTop_toBottomOf="@+id/txtPUCP7" />
@@ -248,7 +269,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="60dp"
-        android:text="TextView"
+        android:textSize="16sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@+id/txtPUCP8"
         app:layout_constraintStart_toStartOf="@+id/txtPUCP8"
         app:layout_constraintTop_toBottomOf="@+id/txtPUCP8" />

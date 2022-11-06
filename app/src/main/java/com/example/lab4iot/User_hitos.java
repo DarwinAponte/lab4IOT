@@ -25,12 +25,7 @@ public class User_hitos extends AppCompatActivity {
     MyAdapter adapter1, adapter2;
     FirebaseDatabase firebaseDatabase;
 
-    @Override
-    public void onBackPressed() {
-        super.onBackPressed();
-        startActivity(new Intent(User_hitos.this, UserActivity.class));
-        finish();
-    }
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
